@@ -21,9 +21,13 @@ binary_tree_t *find_common_ancestor(const binary_tree_t *node1,
 	ancestor2 = node2->parent;
 
 	if (ancestor1 == NULL || node1 == ancestor2 || (!ancestor1->parent && ancestor2))
+	{
 		return (find_common_ancestor(node1, ancestor2));
+	}
 	else if (ancestor2 == NULL || ancestor1 == node2 || (!ancestor2->parent && ancestor1))
+	{
 		return (find_common_ancestor(ancestor1, node2));
+	}
 
 	return (find_common_ancestor(ancestor1, ancestor2));
 }
