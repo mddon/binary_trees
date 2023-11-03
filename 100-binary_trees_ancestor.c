@@ -6,8 +6,7 @@
  * @node2: Second node
  * Return: The node of the common ancestor
  */
-binary_tree_t *find_common_ancestor(const binary_tree_t *node1,
-                                    const binary_tree_t *node2)
+binary_tree_t *find_common_ancestor(const binary_tree_t *node1, const binary_tree_t *node2)
 {
 	binary_tree_t *ances1, *ances2;
 
@@ -38,8 +37,7 @@ binary_tree_t *find_common_ancestor(const binary_tree_t *node1,
  * @second: Second node
  * Return: The node of the ancestor
  */
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
-                                     const binary_tree_t *second)
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
 {
 	if (first == NULL || second == NULL)
 		return (NULL);
